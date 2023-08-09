@@ -8,7 +8,7 @@ const users = require("./routes/api/users");
 
 // .env file setup
 dotenv.config({ path: ".env" });
-const port = process.env.PORT;
+const port = process.env.PORT || 8082;
 // creating express app
 const app = express();
 
